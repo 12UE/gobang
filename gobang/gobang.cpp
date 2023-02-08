@@ -194,7 +194,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         if (WHITE ==color &&board.IsWin(px, py, BLACK)) {
             MessageBoxA(NULL, "黑棋胜", "提示", MB_OK);
             IsRestart = true;
-        }
+        } 
         if (BLACK ==color&&board.IsWin(px, py, WHITE)) {
             MessageBoxA(NULL, "白棋胜", "提示", MB_OK);
             IsRestart = true;
